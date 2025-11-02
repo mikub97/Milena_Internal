@@ -20,5 +20,6 @@ def seperate_odd_and_even(numbers):
 
 # chcemy wypisać  liczby od 1 do 100, podzielne przez 3
 for i in range(1,101):
-    print(i)
+    if i %3 == 0:
+        print(i)
 
