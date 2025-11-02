@@ -1,16 +1,24 @@
-name = input("Whats your name?\n")
-print("Welcome", name, "!")
-age = int(input("How old are you?\n"))
+# Write a Python algorithm that, given a list of numbers, separates the odd and even numbers from the
+# original list into two new lists and prints the two lists created.
+# For example:
 
-if age>=18:
-    print("You are an adult,",name)
-    ans = input("Would you like a drink? (y/n)")
-    if ans.lower() == "n":  # 'n'->'n'  'N'->'n'
-        print("bye bye")
-    elif ans.lower() == "y":
-        print("here you go..")
-    else:
-        print("im not sure what you mean..")
-else:
-    print("You are not adult",name)
-    print("byebye")
+
+def seperate_odd_and_even(numbers):
+    even = []
+    odd = []
+    for n in numbers:
+        if n % 2 == 0:
+            even.append(n)
+        else:
+            odd.append(n)
+
+    return odd, even
+
+
+# x,y = seperate_odd_and_even([1,11,111,2,22,222])
+# print(x,"\n",y)
+
+# chcemy wypisać  liczby od 1 do 100, podzielne przez 3
+for i in range(1,101):
+    print(i)
+
